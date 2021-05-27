@@ -11,7 +11,7 @@ export default class MenuExampleStackable extends Component {
         const { activeItem } = this.state
 
         return (
-            <Menu stackable>
+            <Menu stackable secondary>
                 <Menu.Item>
                     <Icon name='bars' />
                 </Menu.Item>

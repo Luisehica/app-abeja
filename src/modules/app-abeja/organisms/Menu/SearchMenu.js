@@ -12,7 +12,7 @@ export default class MenuSearch extends Component {
         const { activeItem } = this.state
 
         return (
-            <Menu stackable fluid>
+            <Menu stackable fluid >
                 <Menu.Item>
                     <Search />
                 </Menu.Item>
