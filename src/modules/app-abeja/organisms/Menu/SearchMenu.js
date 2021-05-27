@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Icon, Menu, Search } from 'semantic-ui-react'
+import { Icon, Input, Menu, Search } from 'semantic-ui-react'
 import Logo from '../../atoms/logo/LogoFluid'
 import DropdownClearable from '../../molecules/Dropdown/DropdownClearable'
 
@@ -12,13 +12,16 @@ export default class MenuSearch extends Component {
         const { activeItem } = this.state
 
         return (
-            <Menu stackable fluid >
-                <Menu.Item>
-                    <Search />
-                </Menu.Item>
+            <Menu stackable borderless >
                 <Menu.Item>
                     <DropdownClearable />
                 </Menu.Item>
+                <Menu.Menu >
+                    <Menu.Item>
+                        <Search size="large" />
+                    </Menu.Item>
+
+                </Menu.Menu>
 
                 {/*  <Menu.Item
                     name='features'

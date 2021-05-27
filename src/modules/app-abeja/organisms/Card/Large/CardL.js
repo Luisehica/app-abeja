@@ -3,7 +3,7 @@ import { Card, Icon, Image } from 'semantic-ui-react'
 
 const CardExampleCard = ({ img, title, subtitle, description, attendance, excused_absenteeism, unexcused_absenteeism, icon, icon2, votes_qty }) => (
   <Card>
-    <Image src='https://picsum.photos/250/250' wrapped ui={false} />
+    <Image src={img || 'https://picsum.photos/250/250'} wrapped ui={false} />
     <Card.Content>
       <Card.Header>{title}</Card.Header>
       <Card.Meta>

@@ -72,6 +72,7 @@ export default class SearchExampleCategory extends Component {
                         })}
                         results={results}
                         value={value}
+                        fluid
                     />
                 </Grid.Column>
                 <Grid.Column width={8}>
