@@ -1,9 +1,10 @@
 import React from 'react'
 import { Image } from 'semantic-ui-react'
 
+import appLogo from "../../../../assets/svg/CO_inspira_logo.svg";
+
 const Logo = () => (
-    <Image src='https://picsum.photos/180/40'/>
-    //<Image src='https://picsum.photos/180/40' fluid />
+    <Image src={appLogo}/>
 )
 
 export default Logo

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Icon, Input, Menu, Search } from 'semantic-ui-react'
-import Logo from '../../atoms/logo/LogoFluid'
+import Logo from '../../atoms/Logo/LogoFluid'
 import DropdownClearable from '../../molecules/Dropdown/DropdownClearable'
 
 export default class MenuSearch extends Component {

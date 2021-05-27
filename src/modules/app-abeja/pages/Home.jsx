@@ -5,9 +5,9 @@ import { Container, Header, Image } from 'semantic-ui-react';
 import Menu from '../organisms/Menu/Menu';
 import MenuSearch from '../organisms/Menu/SearchMenu'
 import Cards from '../organisms/Card/Cards';
-import ItemSimple from '../molecules/Item/Item';
+import ItemSimple from '../molecules/Item/Item.jsx';
 import ItemExampleFloated from '../organisms/ItemFloated/ItemFloated';
-import Top10 from '../pages/Top10';
+import Top10 from '../organisms/Top10/Top10';
 
 const Home = () => {
   const src1 = 'https://picsum.photos/1000/250'
