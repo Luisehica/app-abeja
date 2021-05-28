@@ -1,12 +1,11 @@
 const prod = {
-    API_URL: "https://run.mocky.io/v3/",
-    DELEGATES_URL: "cddd634b-a39d-4884-94af-83809e4233a8"
-  };
+  API_URL: "https://run.mocky.io/v3/",
+  DELEGATES_URL: "8105e3ea-a848-4ce2-851c-f66f8c58ff3b"
+};
   
-  const dev = {
-    API_URL: "http://asmed58.pragma.com.co:8096/gateway/",
-    DELEGATES_URL: "cddd634b-a39d-4884-94af-83809e4233a8"
-  };
+const dev = {
+  API_URL: "https://run.mocky.io/v3/",
+  DELEGATES_URL: "8105e3ea-a848-4ce2-851c-f66f8c58ff3b"
+};
   
-  export const api = process.env.NODE_ENV === "development" ? dev : prod;
-  
+export const environment = process.env.NODE_ENV === "development" ? dev : prod;

@@ -12,12 +12,12 @@ const MainMenu = () => {
                 <Dropdown.Menu>
                 <Dropdown.Header>TOP 10</Dropdown.Header>
                 <Dropdown.Item key={1} className="link">
-                    <Link to="/about">Asistencias</Link>
+                    <Link to="/topTen/assist">Asistencias</Link>
                 </Dropdown.Item>
                 <Dropdown.Item key={2} className="link">
-                    <Link to="/about">Indicador X</Link></Dropdown.Item>
+                    <Link to="/topTen/indicatorX">Indicador X</Link></Dropdown.Item>
                 <Dropdown.Item key={3} className="link">
-                    <Link to="/about">ndicador Z</Link></Dropdown.Item>
+                    <Link to="/topTen/indicatorZ">ndicador Z</Link></Dropdown.Item>
                 </Dropdown.Menu>
             </Dropdown>
             <Menu.Menu position='left'>

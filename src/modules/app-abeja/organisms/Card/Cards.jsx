@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Grid } from 'semantic-ui-react'
-import CardExampleCard from './Large/CardL'
+import CardL from './Large/CardL'
 
 function Cards({ category, state, complement }) {
 
@@ -12,7 +12,7 @@ function Cards({ category, state, complement }) {
 
             <Grid stackable centered columns={4}>
                 <Grid.Column>
-                    <CardExampleCard
+                    <CardL
                         img='https://picsum.photos/250/250'
                         title="Nombre"
                         subtitle="Partido"
@@ -26,7 +26,7 @@ function Cards({ category, state, complement }) {
                     />
                 </Grid.Column>
                 <Grid.Column>
-                    <CardExampleCard
+                    <CardL
                         img='https://picsum.photos/250/250'
                         title="Nombre"
                         subtitle="Partido"
@@ -40,7 +40,7 @@ function Cards({ category, state, complement }) {
                     />
                 </Grid.Column>
                 <Grid.Column>
-                    <CardExampleCard
+                    <CardL
                         img='https://picsum.photos/250/250'
                         title="Nombre"
                         subtitle="Partido"
@@ -54,7 +54,7 @@ function Cards({ category, state, complement }) {
                     />
                 </Grid.Column>
                 <Grid.Column>
-                    <CardExampleCard
+                    <CardL
                         img='https://picsum.photos/250/250'
                         title="Nombre"
                         subtitle="Partido"
@@ -68,7 +68,7 @@ function Cards({ category, state, complement }) {
                     />
                 </Grid.Column>
                 <Grid.Column>
-                    <CardExampleCard
+                    <CardL
                         img='https://picsum.photos/250/250'
                         title="Nombre"
                         subtitle="Partido"
@@ -82,7 +82,7 @@ function Cards({ category, state, complement }) {
                     />
                 </Grid.Column>
                 <Grid.Column>
-                    <CardExampleCard
+                    <CardL
                         img='https://picsum.photos/250/250'
                         title="Nombre"
                         subtitle="Partido"
@@ -96,7 +96,7 @@ function Cards({ category, state, complement }) {
                     />
                 </Grid.Column>
                 <Grid.Column>
-                    <CardExampleCard
+                    <CardL
                         img='https://picsum.photos/250/250'
                         title="Nombre"
                         subtitle="Partido"
@@ -110,7 +110,7 @@ function Cards({ category, state, complement }) {
                     />
                 </Grid.Column>
                 <Grid.Column>
-                    <CardExampleCard
+                    <CardL
                         img='https://picsum.photos/250/250'
                         title="Nombre"
                         subtitle="Partido"
@@ -124,7 +124,7 @@ function Cards({ category, state, complement }) {
                     />
                 </Grid.Column>
                 <Grid.Column>
-                    <CardExampleCard
+                    <CardL
                         img='https://picsum.photos/250/250'
                         title="Nombre"
                         subtitle="Partido"

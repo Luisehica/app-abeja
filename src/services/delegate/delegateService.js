@@ -1,13 +1,13 @@
 import axios from "axios";
-import { enviroment } from '../common/enviroment';
+import { environment } from '../../common/environment';
 
 export default class DelegateService {
         
-    apiEndpoint = enviroment.API_URL;
+    apiEndpoint = environment.API_URL;
 
     getAll = () => {
         return axios.get(
-        `${this.apiEndpoint}${enviroment.DELEGATES_URL}`
+        `${this.apiEndpoint}${environment.DELEGATES_URL}`
     );
   };
 }
