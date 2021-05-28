@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Icon, Menu } from 'semantic-ui-react'
-import Logo from '../../atoms/Logo/Logo'
+//import Logo from '../../atoms/Logo/Logo'
 
 export default class MenuExampleStackable extends Component {
     state = {}
@@ -16,7 +16,6 @@ export default class MenuExampleStackable extends Component {
                     <Icon name='bars' />
                 </Menu.Item>
                 <Menu.Item>
-                    <Logo />
                 </Menu.Item>
 
                 {/*  <Menu.Item
