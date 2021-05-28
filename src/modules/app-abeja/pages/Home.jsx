@@ -1,27 +1,15 @@
 import React from 'react';
 
-import { Container, Header, Image } from 'semantic-ui-react';
-
-import Menu from '../organisms/Menu/Menu';
-import MenuSearch from '../organisms/Menu/SearchMenu'
 import Cards from '../organisms/Card/Cards';
 import ItemSimple from '../molecules/Item/Item.jsx';
 import ItemExampleFloated from '../organisms/ItemFloated/ItemFloated';
 import Top10 from '../organisms/Top10/Top10';
+import Layout from '../../../components/templates/MainLayout/MainLayout';
 
 const Home = () => {
-  const src1 = 'https://picsum.photos/1000/250'
   return (
-    <div className="App">
-      <Container>
-        <Menu />
-        <Image src={src1} size='massive' centered fluid />
-        <Header as='h3'>Ciudadanos informados generando cambio</Header>
-        <Header as='h5'>Conocer e informarte sobre el desempeño de tus congresistas puede parecer dificil. Tranquilo, nosotros te lo facilitamos.</Header>
-        <Header as='h2'>Top 10 Indicadores</Header>
-
+    <Layout>        
         <ItemExampleFloated />
-        <MenuSearch />
 
         <br />
 
@@ -48,8 +36,7 @@ const Home = () => {
         <Top10
           categoria="Top 10 Indicador Z"
         />
-      </Container>
-    </div >
+    </Layout>
   );
 }
 

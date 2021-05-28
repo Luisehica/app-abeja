@@ -1,0 +1,8 @@
+#root{
+    display: flex;
+
+    & > .main-container{
+        position: relative;
+        width: 100%;
+    }
+}
