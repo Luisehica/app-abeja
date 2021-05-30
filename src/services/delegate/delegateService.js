@@ -6,8 +6,16 @@ export default class DelegateService {
     apiEndpoint = environment.API_URL;
 
     getAll = () => {
-        return axios.get(
-        `${this.apiEndpoint}${environment.DELEGATES_URL}`
+      const config = {
+        headers: {
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*',
+        }
+      }
+    
+      return axios.get(
+      `${this.apiEndpoint}${environment.DELEGATES_URL}`,
+      config
     );
   };
 }
