@@ -5,30 +5,30 @@ import DelegateService from '../../../../services/delegate/delegateService';
 import './DelegatesList.scss';
 
 
-const DelegatesList = (attribute) => {
+const DelegatesList = ({ attribute }) => {
   let delegateService = new DelegateService();
 
   const [delegates, setDelegates] = useState([]);
 
-  const setInitialData = () => {
-    delegateService.getAll().then(delegatesList => {
-      console.log({delegatesList});
+  const setData = () => {
+    setDelegates([]);
+    delegateService.getAll(attribute).then(delegatesList => {
       setDelegates(delegatesList.data);
     });
   };
 
   useEffect(() => {
-    setInitialData();
-  }, []);
+    setData();
+  }, [ attribute ]);
 
   const renderDelegateData = delegate => {
-    console.log(delegate);
     return (
       <React.Fragment>
         <CardL
-          key={delegate.id}
-          img='https://picsum.photos/250/250'
-          title={`${delegate.nombre} ${delegate.apellido}`}
+          key={`${delegate.id}`}
+          className="delegates-list__card"
+          img={delegate.picture}
+          title={`${delegate.name}`}
           subtitle={delegate.partido_politico_actual}
           description=""
           attendance={delegate.periodos[0]?.asistencias}
@@ -43,7 +43,7 @@ const DelegatesList = (attribute) => {
 
   return (
     <div className="delegates-list">
-      { delegates.map( delegate => { 
+      { delegates.slice(0, 10).map( delegate => { 
         return(
           <>
           { renderDelegateData(delegate) }

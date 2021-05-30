@@ -3,6 +3,7 @@ import React from "react";
 import { Container, Header } from 'semantic-ui-react';
 
 import Hero from "../../atoms/Hero/Hero";
+import Footer from "../../organisms/Footer/Footer";
 import Menu from '../../organisms/Menu/Menu';
 import MenuSearch from '../../organisms/Menu/SearchMenu';
 
@@ -20,6 +21,7 @@ const MainLayout = ({ children }) => {
           { children }
         </main>
       </Container>
+      <Footer></Footer>
     </React.Fragment>
   );
 };

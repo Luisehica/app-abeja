@@ -8,7 +8,7 @@ const Routes = (props) => {
   return (
     <Switch>
       <Route exact path="/home" component={Home}/>
-      <Route exact path="/topTen/:attribute" component={TopTenPage}/>
+      <Route exact path="/topTen/:attribute/:value" component={TopTenPage}/>
       <Redirect from="/**" exact to="/home" />
     </Switch>
   );

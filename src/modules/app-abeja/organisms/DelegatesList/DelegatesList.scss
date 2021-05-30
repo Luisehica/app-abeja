@@ -2,5 +2,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-bottom: 10vh;
+
+    &__card {
+        min-width: 100px;
+        width: 20% !important;
+        max-width: 300px !important;
+        margin-right: 1rem !important;
+        margin-top: 1rem;
+    }
 }
