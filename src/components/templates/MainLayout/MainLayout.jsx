@@ -13,7 +13,7 @@ const MainLayout = ({ children }) => {
   return (
     <React.Fragment>
       <Menu />
-      <Container>
+      <Container className="main-layout__container">
         <Hero></Hero>
         <Header as='h2'>Top 10 Indicadores</Header>
         <MenuSearch />
@@ -21,7 +21,6 @@ const MainLayout = ({ children }) => {
           { children }
         </main>
       </Container>
-      <Footer></Footer>
     </React.Fragment>
   );
 };

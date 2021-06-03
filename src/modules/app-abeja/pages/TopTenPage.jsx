@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import Layout from '../../../components/templates/MainLayout/MainLayout';
-import DelegatesList from '../organisms/DelegatesList/DelegatesList';
+import DelegatesCardList from '../organisms/DelegatesCardList/DelegatesCardList';
 
 const TopTenPage = ( props ) => {
   const [title, setTitle] = useState('XXX');
@@ -30,7 +30,7 @@ const TopTenPage = ( props ) => {
   return (
     <Layout>
         <h1>{ title }</h1>
-        <DelegatesList attribute={value}/>
+        <DelegatesCardList attribute={value}/>
     </Layout>
   );
 }

@@ -1,8 +1,14 @@
-#root{
+#root {
     display: flex;
 
     & > .main-container{
         position: relative;
         width: 100%;
+    }
+}
+
+.main-layout {
+    &__container {
+        padding-bottom: 5vh;
     }
 }

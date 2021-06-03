@@ -1,32 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import CardL from '../Card/Large/CardL';
-import DelegateService from '../../../../services/delegate/delegateService';
 
-import './DelegatesList.scss';
+import './DelegatesCardList.scss';
+import GetDeletagesHook from '../../../../hooks/getDelegates.hook';
 
 
-const DelegatesList = ({ attribute }) => {
-  let delegateService = new DelegateService();
+const DelegatesCardList = ({ attribute }) => {
+  
+  const delegates = GetDeletagesHook(attribute);
 
-  const [delegates, setDelegates] = useState([]);
-
-  const setData = () => {
-    setDelegates([]);
-    delegateService.getAll(attribute).then(delegatesList => {
-      setDelegates(delegatesList.data);
-    });
-  };
-
-  useEffect(() => {
-    setData();
-  }, [ attribute ]);
-
-  const renderDelegateData = delegate => {
+  const renderDelegateData = (delegate) => {
     return (
       <React.Fragment>
         <CardL
           key={`${delegate.id}`}
-          className="delegates-list__card"
+          className="delegates-card-list__card"
           img={delegate.picture}
           title={`${delegate.name}`}
           subtitle={delegate.partido_politico_actual}
@@ -42,8 +30,8 @@ const DelegatesList = ({ attribute }) => {
   };
 
   return (
-    <div className="delegates-list">
-      { delegates.slice(0, 10).map( delegate => { 
+    <div className="delegates-card-list">
+      { delegates.map( delegate => { 
         return(
           <>
           { renderDelegateData(delegate) }
@@ -54,4 +42,4 @@ const DelegatesList = ({ attribute }) => {
   );
 }
 
-export default DelegatesList;
+export default DelegatesCardList;
