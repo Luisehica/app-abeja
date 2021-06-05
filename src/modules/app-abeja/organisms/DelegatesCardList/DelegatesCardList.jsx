@@ -1,12 +1,12 @@
 import React from 'react';
-import CardL from '../Card/Large/CardL';
+import CardL from '../Card/Medium/CardM';
 
 import './DelegatesCardList.scss';
 import GetDeletagesHook from '../../../../hooks/getDelegates.hook';
 
 
 const DelegatesCardList = ({ attribute }) => {
-  
+
   const delegates = GetDeletagesHook(attribute);
 
   const renderDelegateData = (delegate) => {
@@ -31,10 +31,10 @@ const DelegatesCardList = ({ attribute }) => {
 
   return (
     <div className="delegates-card-list">
-      { delegates.map( delegate => { 
-        return(
+      { delegates.map(delegate => {
+        return (
           <>
-          { renderDelegateData(delegate) }
+            { renderDelegateData(delegate)}
           </>
         );
       })}

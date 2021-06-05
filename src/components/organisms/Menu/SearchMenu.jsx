@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Menu } from 'semantic-ui-react'
 import DropdownClearable from '../../molecules/Dropdown/DropdownClearable'
-import SearchCat from '../../molecules/Search/Search'
+// import SearchCat from '../../molecules/Search/Search.jsx'
 
 export default class MenuSearch extends Component {
     state = {}
@@ -18,7 +18,7 @@ export default class MenuSearch extends Component {
                 </Menu.Item>
                 <Menu.Menu >
                     <Menu.Item>
-                        <SearchCat />
+                        {/* <SearchCat /> */}
                     </Menu.Item>
 
                 </Menu.Menu>
