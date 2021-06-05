@@ -1,9 +1,9 @@
-import React from 'react'
-import { Card, Icon, Image } from 'semantic-ui-react'
+import React from 'react';
+import { Card, Icon, Image } from 'semantic-ui-react';
 
-const CardExampleCard = ({ img, title, subtitle, description, attendance, excused_absenteeism, unexcused_absenteeism, icon, icon2, votes_qty }) => (
-  <Card>
-    <Image src={img || 'https://picsum.photos/250/250'} wrapped ui={false} />
+const CardL = ({ className, img, title, subtitle, description, attendance, excused_absenteeism, unexcused_absenteeism, icon, icon2, votes_qty }) => (
+  <Card className={className}>
+    <Image src={img} wrapped ui={false} />
     <Card.Content>
       <Card.Header>{title}</Card.Header>
       <Card.Meta>
@@ -40,4 +40,4 @@ const CardExampleCard = ({ img, title, subtitle, description, attendance, excuse
   </Card>
 )
 
-export default CardExampleCard
+export default CardL;
