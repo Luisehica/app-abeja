@@ -21,14 +21,13 @@ const Home = () => {
         <Header as='h2'>Top 10 Indicadores</Header>
 
         <ItemExampleFloated />
-        <MenuSearch />
+
 
         <br />
 
         <Cards
           category="Representates a la Camara"
-          complement="del Departamento de "
-          state="Cundinamarca"
+
         />
         <ItemSimple
           imagen="https://picsum.photos/200/100"

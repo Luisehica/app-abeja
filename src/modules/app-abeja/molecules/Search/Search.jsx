@@ -25,7 +25,7 @@ const source = _.range(0, 3).reduce((memo) => {
     return memo
 }, {})
 
-export default class SearchExampleCategory extends Component {
+export default class SearchCat extends Component {
     state = initialState
 
     handleResultSelect = (e, { result }) => this.setState({ value: result.title })
